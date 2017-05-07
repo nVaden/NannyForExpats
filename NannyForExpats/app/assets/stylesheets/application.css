@@ -415,12 +415,28 @@ there.
 
 .family_entry{
   height: 500px;
-  background-color:grey;
+  background-image:url(family.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 250px;
+  text-align:center;
+  border: 1px groove grey;
+  border-radius: 5px;
+  padding: 10px;
 }
-
+.form_align {
+  text-align:center;
+}
 .nanny_entry{
   height: 500px;
-  background-color:rgb(200,12,50);
+  background-image:url(nanny.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 250px;
+  text-align:center;
+  border: 1px groove grey;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .footer {

@@ -1,7 +1,138 @@
+<div class="form_align">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
  
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: :true }) do |f| %>
   <%= devise_error_messages! %>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :place %><br />
+        <%= f.text_field :place, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :phone %><br />
+        <%= f.text_field :phone, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_field :address, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :nationality %><br />
+        <%= f.text_field :nationality, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :children %><br />
+        <%= f.text_field :children, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :dob %><br />
+        <%= f.text_field :dob, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :additional %><br />
+        <%= f.text_field :additional, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :needs %><br />
+        <%= f.text_field :needs, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :living %><br />
+        <%= f.text_field :living, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :schedule %><br />
+        <%= f.text_field :schedule, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :monday %><br />
+        <%= f.text_field :monday, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :tuesday %><br />
+        <%= f.text_field :tuesday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :wednesday %><br />
+        <%= f.text_field :wednesday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :thursday %><br />
+        <%= f.text_field :thursday, autofocus: true %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+      <div class="field">
+        <%= f.label :friday %><br />
+        <%= f.text_field :friday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="six columns">
+      <div class="field">
+        <%= f.label :rate %><br />
+        <%= f.text_field :rate, autofocus: true %>
+      </div>
+    </div>
+  </div>
  
   <div class="field">
     <%= f.label :email %><br />
@@ -22,12 +153,6 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
  
-  <% if current_family.avatar.url.present? %>
-    <%= image_tag(current_user.avatar.url) %>
-    <%= f.label :remove_avatar do %>
-      <%= f.check_box :remove_avatar %>
-    <% end %>
-  <% end %>
   <%= f.file_field :avatar %>
   <%= f.hidden_field :avatar_cache %>
  
@@ -46,3 +171,5 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
  
 <%= link_to "Back", :back %>
+
+</div>

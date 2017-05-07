@@ -1,15 +1,146 @@
+<div class="form_align">
 
- 
-<h2>Sign up</h2>
- 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), :html => {multipart: :true}) do |f| %>
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), :html => {multipart: :true}) do |f| %>
   <%= devise_error_messages! %>
- 
+  
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :place %><br />
+        <%= f.text_field :place, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :phone %><br />
+        <%= f.text_field :phone, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_field :address, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :nationality %><br />
+        <%= f.text_field :nationality, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :children %><br />
+        <%= f.text_field :children, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :dob %><br />
+        <%= f.text_field :dob, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :additional %><br />
+        <%= f.text_field :additional, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :needs %><br />
+        <%= f.text_field :needs, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :living %><br />
+        <%= f.text_field :living, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :schedule %><br />
+        <%= f.text_field :schedule, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :monday %><br />
+        <%= f.text_field :monday, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :tuesday %><br />
+        <%= f.text_field :tuesday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :wednesday %><br />
+        <%= f.text_field :wednesday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :thursday %><br />
+        <%= f.text_field :thursday, autofocus: true %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+      <div class="field">
+        <%= f.label :friday %><br />
+        <%= f.text_field :friday, autofocus: true %>
+      </div>
+    </div>
+
+    <div class="six columns">
+      <div class="field">
+        <%= f.label :rate %><br />
+        <%= f.text_field :rate, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
- 
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -17,24 +148,25 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
- 
+
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
- 
-  <div class="field">
-    <%= f.label :avatar do %>
+  <h5>Image:</h4>
+    <div class="field">
+      <%= f.label :avatar do %>
       <%= f.file_field :avatar %>
       <%= f.hidden_field :avatar_cache %>
-    <% end %>
-  </div>
- 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
- 
-<%= render "families/shared/links" %>
+      <% end %>
+    </div>
 
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+    <% end %>
+
+    <%= render "families/shared/links" %>
+
+  </div>
 

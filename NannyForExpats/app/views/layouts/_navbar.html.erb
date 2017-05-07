@@ -11,12 +11,15 @@
 
 	<% if family_signed_in? %>
 	<h3>I'm a Family</h3>
+	<%= link_to "Account", edit_family_registration_path %> /
 	<%= link_to "Log Out", destroy_family_session_path, method: :delete %>
+
 	<% end %>
 
 
 	<% if nanny_signed_in? %>
 	<h3>I'm an Nanny</h3>
+	<%= link_to "Account", edit_nanny_registration_path %> /
 	<%= link_to "Log Out", destroy_nanny_session_path, method: :delete %>
 	<% end %>
 	</div>
