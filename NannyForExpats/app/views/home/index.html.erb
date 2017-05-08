@@ -1,15 +1,14 @@
-<h3>Welcome </h3>
-<div class="row mainpage">
-	<div class="offset-by-one four columns family_entry">
-		<h4>Family</h4>
-		<%= button_to "Login", new_family_session_path %>
-	</div>
-	<div class="offset-by-two four columns nanny_entry">
-		<h4>Nanny</h4>
-		<%= button_to "Login", new_nanny_session_path %>
-	</div>
-</div>
-<hr/>
-<div class="footer">
-	<%= button_to "Admin", new_admin_session_path %>
-</div>
+
+
+<% if admin_signed_in? %>
+<%= render 'layouts/admin' %>
+
+<% elsif family_signed_in? %>
+<%= render 'layouts/family' %>
+
+<% elsif nanny_signed_in? %>
+<%= render 'layouts/nanny' %>
+
+<% else %>
+<%= render 'layouts/landing' %>
+<% end %>

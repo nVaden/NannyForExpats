@@ -1,0 +1,17 @@
+<div class="form_align">
+
+	<div class="nanny_listing">
+		<h3> List of Nannies </h3>
+		<hr/>
+		<hr/>
+		<% Nanny.all.each do |nanny| %>
+		<hr/>
+		<div class="nanny_each">
+			<%= nanny.email %>
+			<%= nanny.language %>
+			<%= image_tag nanny.avatar.url(:thumb) %>
+
+		</div>
+		<% end %>
+	</div>
+</div>
