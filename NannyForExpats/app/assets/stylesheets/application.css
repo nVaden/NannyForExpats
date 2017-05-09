@@ -411,7 +411,12 @@ there.
   background-color:rgb(115,90,190);
   margin-top:-10px;
 }
-
+.family_signup {
+  background-color:rgba(40,40,40,.3);
+  padding: 30px;
+  border: 1px groove rgba(40,40,40,.6);
+  border-radius:5px;
+}
 
 .family_entry{
   height: 500px;
@@ -439,6 +444,55 @@ there.
   padding: 10px;
 }
 
-.footer {
-  float:right;
+.admin_login {
+  position: absolute;
+  bottom:5px;
+  margin-left:90%;
+  font-size:10px;
+}
+
+.house_signup {
+  background-image: url("footer-house.jpg");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  position: absolute;
+  top: 7px;
+  height:95px;
+  margin: 0 auto;
+  width: 40%;
+  right:5px;
+  bottom:5px;
+}
+
+#footer-cloud1 {
+  background-image: url("cloud-1.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 150px;
+  bottom: 80px;
+  width:235px;
+  margin: 0 auto;
+  left:80px;
+}
+
+#footer-cloud2 {
+  background-image: url("cloud-2.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 190px;
+  bottom: 140px;
+  width:220px;
+  margin: 0 auto;
+  right:100px;
+  overflow:hidden;
+}
+
+#footer-house {
+  background-image: url("footer-house.jpg");
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  width:98%;
+  margin: 0 auto;
 }

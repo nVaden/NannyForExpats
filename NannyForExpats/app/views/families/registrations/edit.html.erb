@@ -1,175 +1,180 @@
 <div class="form_align">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
- 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: :true }) do |f| %>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: :true }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="row">
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :name %><br />
-        <%= f.text_field :name, autofocus: true %>
+  <div class="family_signup">
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :name %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :name, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :place %><br />
-        <%= f.text_field :place, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :place %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :place, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :phone %><br />
-        <%= f.text_field :phone, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :phone, 'Phone number' %>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :address %><br />
-        <%= f.text_field :address, autofocus: true %>
+      <div class="eight columns">
+        <%= f.text_field :phone, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :nationality %><br />
-        <%= f.text_field :nationality, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :address %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :address, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :children %><br />
-        <%= f.text_field :children, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :nationality %>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :dob %><br />
-        <%= f.text_field :dob, autofocus: true %>
+      <div class="eight columns">
+        <%= f.text_field :nationality, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :additional %><br />
-        <%= f.text_field :additional, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :children, "Child(ren)" %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :children, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :needs %><br />
-        <%= f.text_field :needs, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :dob, "Date of Birth of the child(ren)" %>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :living %><br />
-        <%= f.text_field :living, autofocus: true %>
+      <div class="eight columns">
+        <%= f.text_field :dob, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :schedule %><br />
-        <%= f.text_field :schedule, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :additional, "Additional tasks" %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :additional, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :monday %><br />
-        <%= f.text_field :monday, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :needs, "Need a nanny per" %>
       </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :tuesday %><br />
-        <%= f.text_field :tuesday, autofocus: true %>
+      <div class="eight columns">
+        <%= f.text_field :needs, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :wednesday %><br />
-        <%= f.text_field :wednesday, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :living, "Live-in or live-out position" %>
+      </div>
+      <div class="eight columns">
+        <%= f.text_field :living, size:"86", autofocus: true %>
       </div>
     </div>
 
-    <div class="four columns">
-      <div class="field">
-        <%= f.label :thursday %><br />
-        <%= f.text_field :thursday, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :rate, "Hourly rate for nanny" %>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="six columns">
-      <div class="field">
-        <%= f.label :friday %><br />
-        <%= f.text_field :friday, autofocus: true %>
+      <div class="eight columns">
+        <%= f.text_field :rate, size: "86", autofocus: true %>
       </div>
     </div>
 
-    <div class="six columns">
-      <div class="field">
-        <%= f.label :rate %><br />
-        <%= f.text_field :rate, autofocus: true %>
+    <div class="row">
+      <div class="two columns">
+        <%= f.label :schedule, "Working Schedule" %>
+      </div>
+      <div class="four columns">
+        <%= f.text_field :schedule, size:"86", autofocus: true %>
       </div>
     </div>
-  </div>
- 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
- 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+
+    <div class="row">
+      <div class="four columns">
+        <%= f.label :monday %>
+        <%= f.text_field :monday, size:"30", autofocus: true %>
+      </div>
+      <div class="four columns">
+        <%= f.label :tuesday %>
+        <%= f.text_field :tuesday, size:"30", autofocus: true %>
+      </div>
+      <div class="four columns">
+        <%= f.label :wednesday %>
+        <%= f.text_field :wednesday, size:"30", autofocus: true %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="four columns">
+        <%= f.label :thursday %>
+        <%= f.text_field :thursday, size:"30", autofocus: true %>
+      </div>
+      <div class="four columns">
+        <%= f.label :friday %>
+        <%= f.text_field :friday, size: "30", autofocus: true %>
+      </div>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
- 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
- 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
- 
-  <%= f.file_field :avatar %>
-  <%= f.hidden_field :avatar_cache %>
- 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
- 
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
- 
-<h3>Cancel my account</h3>
- 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
- 
-<%= link_to "Back", :back %>
+    <% end %>
 
+    <div class="field">
+      <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+
+    <%= f.file_field :avatar %>
+    <%= f.hidden_field :avatar_cache %>
+
+    <div class="field">
+      <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+      <%= f.password_field :current_password, autocomplete: "off" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Update" %>
+    </div>
+    <% end %>
+
+    <h3>Cancel my account</h3>
+
+    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+    <%= link_to "Back", :back %>
+
+  </div>
 </div>
