@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="six columns nanny_listing">
 			<h3> List of Nannies </h3>
-			<% Nanny.all.each do |nanny| %>
+			<% @nannies.each do |nanny| %>
 			<hr/>
 			<div class="nanny_each">
 				<%= nanny.email %>
@@ -16,14 +16,13 @@
 
 		<div class="six columns family_listing">
 			<h3> List of Families </h3>
-			<% Family.all.each do |family| %>
+			<% @families.each do |family| %>
 			<hr/>
-			<%= link_to family_session_path do %>
+
 			<div class="family_each">
-				<%= family.email %>
+			<%= family.email %>
 			</div>
 
-			<% end %>
 			<% end %>
 		</div>
 	</div>

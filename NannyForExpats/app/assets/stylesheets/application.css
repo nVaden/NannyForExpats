@@ -14,8 +14,8 @@
  *= require_self
  */
 
-/* Skeleton start ---*/
-.container {
+ /* Skeleton start ---*/
+ .container {
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -442,6 +442,13 @@ there.
   border: 1px groove grey;
   border-radius: 5px;
   padding: 10px;
+}
+.nanny_signup {
+  background-color:rgba(40,40,40,.3);
+  padding: 30px;
+  border: 1px groove rgba(40,40,40,.6);
+  border-radius:5px;
+
 }
 
 .admin_login {
