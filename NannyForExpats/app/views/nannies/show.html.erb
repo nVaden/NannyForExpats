@@ -1,27 +1,26 @@
 
-
-<!-- Must use the method to locate because it's a different rails model user type -->
+<h1>This is the profile page for <%= @nanny.email %></h1>
 
 <div class="row" style="border:1px solid black">
 	<div class="one-third column" style="border:1px solid black">
-		<%= image_tag "nanny.png" %>	
+		<%= image_tag "default.png" %>	
 	</div>
 	<div class="two-thirds column profile_pic">
 		<div class="row profile_headline">
 			<h5>"This will be the headline for the family"</h5>
 		</div>
 		<div class="row profile_name">
-			<h4><%= @family.email %></h4>
+			<h4><%= @nanny.email %></h4>
 		</div>
 		<div class="row profile_line1">
 			<div class="one-third column profile_line2">
-			age: <%= @family.place %>
+			age: <%= @nanny.age %>
 			</div>
 			<div class="one-third column profile_line2">
-			nationality: <%= @family.nationality %>
+			nationality: <%= @nanny.nationality %>
 			</div>
 			<div class="one-third column profile_line2">
-			languages: <%= @family.children %>
+			languages: <%= @nanny.language 	 %>
 			</div>
 		</div>
 

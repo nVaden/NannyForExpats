@@ -1,5 +1,5 @@
 
-<h3>Interview Nanny</h3>
+<h3>Edit your Nanny Profile</h3>
 
 <div class="form_align nanny_signup">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -57,59 +57,52 @@
 
   <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px;">
 
-  <div class="one column">
+    <div class="one column">
       <%= f.label :education %>
     </div>
     <div class="nine columns">
       <%= f.text_field :education, size:"90", autofocus: true %>
     </div>
+
   </div>
 
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+  <div class="row">
 
-      <div class="one column">
-      <%= f.label :degree %>
-    </div>
     <div class="three columns">
-      <%= f.text_field :degree, autofocus: true %>
+    <%= f.label :experience, "Years of Childcare exp" %>
+    </div>
+    <div class="one column">
+    <%= f.text_field :experience, autofocus: true %>
     </div>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :ages %><br />
+    <div class="offset-by-two two columns">
+    <%= f.label :ages, "Ages worked with" %>
+    </div>
+    <div class="two columns">
       <%= f.text_field :ages, autofocus: true %>
     </div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :permit %><br />
+  </div>
+
+
+  <div class="row">
+    <div class="one columns">
+      <%= f.label :permit %>
+    </div>
+    <div class="two columns">
       <%= f.text_field :permit, autofocus: true %>
+    </div>
+
+    <div class="two columns">
+      <%= f.label :experience %>
+    </div>
+    <div class="four columns">
+      <%= f.text_field :experience, autofocus: true %>
     </div>
   </div>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :permit %><br />
-      <%= f.text_field :permit, autofocus: true %>
-    </div>
-  </div>
-  <div class="field">
-    <%= f.label :permit %><br />
-    <%= f.text_field :permit, autofocus: true %>
-  </div>
 </div>
+
 <div class="row">
   <div class="four columns">
     <div class="field">

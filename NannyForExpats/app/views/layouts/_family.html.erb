@@ -1,15 +1,15 @@
 <div class="form_align">
 
+<%= link_to "My Profile", current_family %>
+
 	<div class="nanny_listing">
 		<h3> List of Nannies </h3>
+
+		<% @nannies.each do |nanny| %>
 		<hr/>
-		<hr/>
-		<% Nanny.all.each do |nanny| %>
-		<hr/>
+		<%= link_to nanny.email, nanny %>
 		<div class="nanny_each">
 			<%= nanny.email %>
-			<%= nanny.language %>
-			<%= image_tag nanny.avatar.url(:thumb) %>
 
 		</div>
 		<% end %>

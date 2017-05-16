@@ -1,17 +1,18 @@
 <div class="form_align">
-	<h1> Nanny </h1>
+	<h3> Nanny </h3>
 
+
+	<%= link_to "My Profile", current_nanny %>
 
 	<div class="family_listing">
 		<h3> List of Families </h3>
-		<% Family.all.each do |family| %>
+		<% @families.each do |family| %>
 		<hr/>
-		<%= link_to family_session_path do %>
+		<%= link_to family.email, family %>
 		<div class="family_each">
 			<%= family.email %>
 		</div>
 
-		<% end %>
 		<% end %>
 	</div>
 

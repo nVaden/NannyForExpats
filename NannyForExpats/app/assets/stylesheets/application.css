@@ -503,3 +503,23 @@ there.
   width:98%;
   margin: 0 auto;
 }
+.profile_headline {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius:10px;
+  text-align:center;
+}
+.profile_name {
+  text-align:center;
+  border: 1px solid black;
+}
+
+.profile_line1 {
+  text-align:center;
+  border: 1px solid black;
+}
+
+.profile_line2 {
+  text-align:center;
+  border: 1px solid black;
+}
