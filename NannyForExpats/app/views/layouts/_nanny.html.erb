@@ -8,9 +8,9 @@
 		<h3> List of Families </h3>
 		<% @families.each do |family| %>
 		<hr/>
-		<%= link_to family.email, family %>
+		<%= link_to family.name, family %>
 		<div class="family_each">
-			<%= family.email %>
+			<%= family.headline %>
 		</div>
 
 		<% end %>

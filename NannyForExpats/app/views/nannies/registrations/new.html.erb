@@ -9,56 +9,56 @@
   <div class="row" style="border-bottom:1px solid black;"">
 
     <div class="one column">
-      <%= f.label :name %>
+      <%= f.label :name, "Name:" %>
     </div>
     <div class="four columns" style="border-right:1px solid black">
       <%= f.text_field :name, size:"33", autofocus: true %>
     </div>
 
     <div class="one column">
-      <%= f.label :age %>
+      <%= f.label :age, "Age:" %>
     </div>
     <div class="one column">
       <%= f.text_field :age, size:"5", autofocus: true %>
     </div>
     
     <div class="one column">
-      <%= f.label :place %>
+      <%= f.label :place, "Place:"%>
     </div>
     <div class="three columns" style="border-right:1px solid black">
-      <%= f.text_field :place, size:"25", autofocus: true %>
+      <%= f.text_field :place, size:"25", autofocus: true,  placeholder:"Amsterdam.." %>
     </div>
   </div>
 
 
   <div class="row" style="margin-top:2px; border-bottom: 1px solid black; margin-bottom: 2px;">
     <div class="one column">
-      <%= f.label :phone, "Phone Number" %>
+      <%= f.label :phone, "Phone Number:" %>
     </div>
     <div class="two columns">
-      <%= f.text_field :phone, autofocus: true, placeholder:"+31" %>
+      <%= f.text_field :phone, autofocus: true, placeholder:"+31 |" %>
     </div>
 
 
     <div class="offset-by-one one column">
-      <%= f.label :nationality %>
+      <%= f.label :nationality, "Nationality:" %>
     </div>
     <div class="two columns">
-      <%= f.text_field :nationality, autofocus: true %>
+      <%= f.text_field :nationality, autofocus: true, placeholder: "American" %>
     </div>
 
     <div class="offset-by-one one column">
-      <%= f.label :language, "Language(s)"%>
+      <%= f.label :language, "Language(s):"%>
     </div>
     <div class="offset-by-one two columns">
-      <%= f.text_field :language, size:"19", autofocus: true %>
+      <%= f.text_field :language, size:"19", autofocus: true, placeholder: "English, Dutch, Spanish, etc.." %>
     </div>
   </div>
 
   <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px;">
 
     <div class="one column">
-      <%= f.label :education %>
+      <%= f.label :education, "Education:" %>
     </div>
     <div class="nine columns">
       <%= f.text_field :education, size:"90", autofocus: true %>
@@ -66,17 +66,17 @@
 
   </div>
 
-  <div class="row">
+  <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px;">
 
     <div class="three columns">
-    <%= f.label :experience, "Years of Childcare exp" %>
+      <%= f.label :experience, "Years of Childcare exp:" %>
     </div>
     <div class="one column">
-    <%= f.text_field :experience, autofocus: true %>
+      <%= f.text_field :experience, autofocus: true %>
     </div>
 
     <div class="offset-by-two two columns">
-    <%= f.label :ages, "Ages worked with" %>
+      <%= f.label :ages, "Ages worked with" %>
     </div>
     <div class="two columns">
       <%= f.text_field :ages, autofocus: true %>
@@ -84,93 +84,104 @@
 
   </div>
 
-
-  <div class="row">
-    <div class="one columns">
-      <%= f.label :permit %>
-    </div>
-    <div class="two columns">
-      <%= f.text_field :permit, autofocus: true %>
-    </div>
+  <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px">
 
     <div class="two columns">
       <%= f.label :experience %>
     </div>
     <div class="four columns">
-      <%= f.text_field :experience, autofocus: true %>
+      <%= f.text_field :experience, size:"39", autofocus: true %>
+    </div>
+    <div class="offset-by-one two columns">
+      <%= f.label :permit, "Work Permit:" %>
+    </div>
+
+    <div class="one column">
+      <%= f.label :permit, "Yes", :value => "true" %>
+      <%= f.radio_button  :permit, true %>
+      <%= f.label :permit, "No", :value => "false" %>
+      <%= f.radio_button :permit, false, :checked => true %>
     </div>
   </div>
 
-</div>
-
-<div class="row">
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :monday %><br />
-      <%= f.text_field :monday, autofocus: true %>
+  <div class="row">
+    <div class="one column">
+      <%= f.label :headline, "Headline:" %>
+    </div>
+    <div class="ten columns">
+      <%= f.text_field :headline, size:"90", autofocus: true, placeholder:"Enter in a headline that the families will see" %>
     </div>
   </div>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :tuesday %><br />
-      <%= f.text_field :tuesday, autofocus: true %>
+
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :monday %><br />
+        <%= f.text_field :monday, autofocus: true, placeholder: "9-5" %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :tuesday %><br />
+        <%= f.text_field :tuesday, autofocus: true, placeholder: "9-5" %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :wedsnesday %><br />
+        <%= f.text_field :wedsnesday, autofocus: true, placeholder: "9-5" %>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :thursday %><br />
+        <%= f.text_field :thursday, autofocus: true, placeholder: "9-5" %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :friday %><br />
+        <%= f.text_field :friday, autofocus: true, placeholder: "9-5" %>
+      </div>
+    </div>
+
+    <div class="four columns">
+      <div class="field">
+        <%= f.label :rate %><br />
+        <%= f.text_field :rate, autofocus: true, placeholder: "How much per hour" %>
+      </div>
     </div>
   </div>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :wedsnesday %><br />
-      <%= f.text_field :wedsnesday, autofocus: true %>
-    </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+<hr/>
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-</div>
-<div class="row">
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :thursday %><br />
-      <%= f.text_field :thursday, autofocus: true %>
-    </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :friday %><br />
-      <%= f.text_field :friday, autofocus: true %>
-    </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
   </div>
+  <% end %>
 
-  <div class="four columns">
-    <div class="field">
-      <%= f.label :rate %><br />
-      <%= f.text_field :rate, autofocus: true %>
-    </div>
-  </div>
-</div>
-
-<div class="field">
-  <%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %>
-</div>
-
-<div class="field">
-  <%= f.label :password %>
-  <% if @minimum_password_length %>
-  <em>(<%= @minimum_password_length %> characters minimum)</em>
-  <% end %><br />
-  <%= f.password_field :password, autocomplete: "off" %>
-</div>
-
-<div class="field">
-  <%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation, autocomplete: "off" %>
-</div>
-
-<div class="actions">
-  <%= f.submit "Sign up" %>
-</div>
-<% end %>
-
-<%= render "nannies/shared/links" %>
+  <%= render "nannies/shared/links" %>
 </div>

@@ -510,6 +510,7 @@ there.
   text-align:center;
 }
 .profile_name {
+  border-radius:10px;
   text-align:center;
   border: 1px solid black;
 }
@@ -522,4 +523,20 @@ there.
 .profile_line2 {
   text-align:center;
   border: 1px solid black;
+}
+
+.profile_line3 {
+  padding:10px;
+  border: 1px solid black; 
+}
+
+.profile_line4 {
+  padding:10px;
+  border: 1px solid black; 
+  height:100px;
+}
+.profile_line5 {
+  padding:10px;
+  border: 1px solid black; 
+  height:50x1px;
 }

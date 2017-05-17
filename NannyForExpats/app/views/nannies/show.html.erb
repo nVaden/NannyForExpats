@@ -1,33 +1,48 @@
 
-<h1>This is the profile page for <%= @nanny.email %></h1>
-
 <div class="row" style="border:1px solid black">
 	<div class="one-third column" style="border:1px solid black">
 		<%= image_tag "default.png" %>	
 	</div>
 	<div class="two-thirds column profile_pic">
 		<div class="row profile_headline">
-			<h5>"This will be the headline for the family"</h5>
+			<h5><%= @nanny.headline %></h5>
 		</div>
 		<div class="row profile_name">
 			<h4><%= @nanny.email %></h4>
 		</div>
 		<div class="row profile_line1">
 			<div class="one-third column profile_line2">
-			age: <%= @nanny.age %>
+				Age: <%= @nanny.age %>
 			</div>
 			<div class="one-third column profile_line2">
-			nationality: <%= @nanny.nationality %>
+				Nationality: <%= @nanny.nationality %>
 			</div>
 			<div class="one-third column profile_line2">
-			languages: <%= @nanny.language 	 %>
+				Languages: <%= @nanny.language %>
 			</div>
 		</div>
-
-		<p style="padding:10px"> Here we can add information about the family sLorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptas, provident repellendus veritatis iste eum! In harum modi asperiores culpa distinctio, aliquam animi minus ea libero deserunt, itaque vel! Perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magnam deserunt, maiores eaque quo voluptate dolor architecto illo, aliquid commodi nemo facere delectus.</p>
+		<br />
+		<div class="row profile_line3">
+			Degree: <%= @nanny.degree %>
+		</div>
+		<div class="row profile_line4">
+			Education: <%= @nanny.education %>
+		</div>
 	</div>
-</div>
-<div class="row">
-	<p style="padding:10px"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque tempora nam consectetur, facilis quam debitis rem modi. Velit nesciunt, dolores consequuntur, neque placeat error doloremque dolorum! Sapiente, repellat, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae illum aspernatur ad aliquid quasi sunt quibusdam, magnam mollitia, id, saepe officia ducimus. In delectus debitis nemo nobis veritatis nam, facere. </p>
+	
+	<div class="row">
+		<div class="one-half column profile_line5">
+			Certifications: <%= @nanny.conditions %>
+		</div>
+		<div class="two columns profile_line5">
+			First Aid: <%= @nanny.first_aid %>
+		</div>
+		<div class="two columns profile_line5">
+			License: <%= @nanny.license %>
+		</div>
+		<div class="two columns profile_line5">
+			Car: <%= @nanny.vehicle %>
+		</div>
+	</div>
 </div>
 

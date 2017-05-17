@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-	
+	# Set params on all pages with authentication needs to be done
 	def index
 		@families = Family.all
 		@nannies = Nanny.all

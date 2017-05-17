@@ -7,9 +7,9 @@
 
 		<% @nannies.each do |nanny| %>
 		<hr/>
-		<%= link_to nanny.email, nanny %>
+		<%= link_to nanny.name, nanny %>
 		<div class="nanny_each">
-			<%= nanny.email %>
+			<%= nanny.headline %>
 
 		</div>
 		<% end %>

@@ -6,10 +6,10 @@
 			<h3> List of Nannies </h3>
 			<% @nannies.each do |nanny| %>
 			<hr/>
-			<%= link_to nanny.email, nanny %>
+			<%= link_to nanny.name, nanny %>
 			<div class="nanny_each">
-				<%= nanny.email %>
-				<%= image_tag nanny.avatar.url(:thumb) %>
+				<%= nanny.headline %>
+				
 				
 			</div>
 			<% end %>
@@ -19,9 +19,9 @@
 			<h3> List of Families </h3>
 			<% @families.each do |family| %>
 			<hr/>
-			<%= link_to family.email, family %>
+			<%= link_to family.headline, family %>
 			<div class="family_each">
-			<%= family.email %>
+			<%= family.name %>
 			</div>
 
 			<% end %>
