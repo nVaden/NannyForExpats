@@ -5,30 +5,49 @@
 <div class="row" style="border:1px solid black">
 	<div class="one-third column" style="border:1px solid black">
 		<%= image_tag "nanny.png" %>	
+		<div class="row profile_name">
+			<h4>Vaden Family</h4>
+		</div>
 	</div>
 	<div class="two-thirds column profile_pic">
 		<div class="row profile_headline">
 			<h5>"This will be the headline for the family"</h5>
 		</div>
-		<div class="row profile_name">
-			<h4><%= @family.email %></h4>
-		</div>
 		<div class="row profile_line1">
-			<div class="one-third column profile_line2">
-			age: <%= @family.place %>
+			<div class="one-half column profile_line2">
+				Age(s) of Children: <%= @family.children %>
 			</div>
-			<div class="one-third column profile_line2">
-			nationality: <%= @family.nationality %>
-			</div>
-			<div class="one-third column profile_line2">
-			languages: <%= @family.children %>
+			<div class="one-half column profile_line2">
+				Family Nationality: <%= @family.nationality %>
 			</div>
 		</div>
+		<div class="row">
+			<div class="profile_line3">
+				Language(s) Spoken At Home: <%= @family.needs %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="profile_line3">
+				Language(s) Needed In Nanny: <%= @family.needs %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="one-half column profile_line3">
+				Live in / Live out: <%= @family.needs %>
+			</div>
+			<div class="one-half column profile_line3">
+				Hourly Rate: <%= @family.needs %>
+			</div>
+		</div>
+		<br/>
 
-		<p style="padding:10px"> Here we can add information about the family sLorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptas, provident repellendus veritatis iste eum! In harum modi asperiores culpa distinctio, aliquam animi minus ea libero deserunt, itaque vel! Perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magnam deserunt, maiores eaque quo voluptate dolor architecto illo, aliquid commodi nemo facere delectus.</p>
+	</div>
+	<div class="row profile_line2">
+		<strong>Family Working Schedule :<%= @family.schedule %></strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo provident eaque at culpa sequi blanditiis cumque minima, numquam, eligendi commodi pariatur laborum unde architecto perspiciatis, deleniti enim dignissimos. Tenetur, maiores.
+	</div>
+	<div class="row profile_line2">
+		<strong>Additional Tasks Required:<%= @family.needs %> </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae doloremque quasi tempore exercitationem neque! Laboriosam non quis nemo voluptates saepe veritatis odit, officiis consequatur placeat id cupiditate voluptate molestias. Nemo.
 	</div>
 </div>
-<div class="row">
-	<p style="padding:10px"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque tempora nam consectetur, facilis quam debitis rem modi. Velit nesciunt, dolores consequuntur, neque placeat error doloremque dolorum! Sapiente, repellat, totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae illum aspernatur ad aliquid quasi sunt quibusdam, magnam mollitia, id, saepe officia ducimus. In delectus debitis nemo nobis veritatis nam, facere. </p>
-</div>
+
 

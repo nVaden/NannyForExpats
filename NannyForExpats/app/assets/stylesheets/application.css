@@ -516,12 +516,12 @@ there.
 }
 
 .profile_line1 {
-  text-align:center;
   border: 1px solid black;
 }
 
 .profile_line2 {
-  text-align:center;
+  padding-left:15px;
+  padding-bottom: 5px;
   border: 1px solid black;
 }
 
