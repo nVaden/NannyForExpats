@@ -1,37 +1,39 @@
 
 <div class="row" style="border:1px solid black">
 	<div class="one-third column" style="border:1px solid black">
-		<%= image_tag "default.png" %>	
+		<%= image_tag "default.png" %>
+		<div class="row profile_name">
+			<h4><%= @nanny.name %></h4>
+		</div>	
 	</div>
+
 	<div class="two-thirds column profile_pic">
 		<div class="row profile_headline">
 			<h5><%= @nanny.headline %></h5>
 		</div>
-		<div class="row profile_name">
-			<h4><%= @nanny.email %></h4>
-		</div>
+
 		<div class="row profile_line1">
 			<div class="one-third column profile_line2">
-				Age: <%= @nanny.age %>
+				Age: <div class="output_styling"><%= @nanny.age %></div>	
 			</div>
 			<div class="one-third column profile_line2">
-				Nationality: <%= @nanny.nationality %>
+				Nationality: <div class="output_styling"> <%= @nanny.nationality %> </div>
 			</div>
 			<div class="one-third column profile_line2">
-				Languages: <%= @nanny.language %>
+				Languages: <div class="output_styling"><%= @nanny.language %></div>
 			</div>
 		</div>
 		<br />
 		<div class="row profile_line3">
-			Degree: <%= @nanny.degree %>
+			Degree: <div class="output_styling"><%= @nanny.degree %></div>
 		</div>
 		<div class="row profile_line4">
-			Education: <%= @nanny.education %>
+			Education: <div class="output_styling"><%= @nanny.education %></div>
 		</div>
 	</div>
-	
+
 	<div class="row">
-		<div class="one-half column profile_line5">
+		<div class="one-third column profile_line5">
 			Certifications: <%= @nanny.conditions %>
 		</div>
 		<div class="two columns profile_line5">
@@ -43,5 +45,14 @@
 		<div class="two columns profile_line5">
 			Car: <%= @nanny.vehicle %>
 		</div>
+		<div class="two columns profile_line5">
+			Permit:
+			<div class="output_styling"> <%= @nanny.permit %>
+			</div>
+		</div>
 	</div>
+</div>
+
+<div class="row profile_border">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tempore culpa officia cumque quis praesentium, quae incidunt ut sed aperiam blanditiis, excepturi quod repudiandae suscipit debitis deleniti! Illum, sapiente, obcaecati.</p>
 </div>

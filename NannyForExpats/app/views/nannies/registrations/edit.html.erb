@@ -85,7 +85,6 @@
   </div>
 
   <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px">
-
     <div class="two columns">
       <%= f.label :experience %>
     </div>
@@ -100,7 +99,7 @@
       <%= f.label :permit, "Yes", :value => "true" %>
       <%= f.radio_button  :permit, true %>
       <%= f.label :permit, "No", :value => "false" %>
-      <%= f.radio_button :permit, false, :checked => true %>
+      <%= f.radio_button :permit, false, :checked => true, "Yes" %>
     </div>
   </div>
 
@@ -110,6 +109,15 @@
     </div>
     <div class="ten columns">
       <%= f.text_field :headline, size:"90", autofocus: true, placeholder:"Enter in a headline that the families will see" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="one column">
+      <%= f.label :first_aid, "First Aid:" %>
+    </div>
+    <div class="ten columns">
+    <%= f.text_field :first_aid, size: "90", autofocus: true %>
     </div>
   </div>
 

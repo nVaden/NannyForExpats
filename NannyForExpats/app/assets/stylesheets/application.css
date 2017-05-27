@@ -494,6 +494,12 @@ there.
   right:100px;
   overflow:hidden;
 }
+.output_styling {
+  background-color: rgba(20, 20, 20,.1);
+  font-weight: bold;
+  font-family: Helvetica;
+  display:inline;
+}
 
 #footer-house {
   background-image: url("footer-house.jpg");
@@ -505,38 +511,45 @@ there.
 }
 .profile_headline {
   padding: 5px;
-  border: 1px solid black;
-  border-radius:10px;
+  border: 1px groove black;
+  border-radius:3px;
   text-align:center;
+
 }
 .profile_name {
   border-radius:10px;
   text-align:center;
-  border: 1px solid black;
+  text-decoration: underline;
+  border: 1px groove black;
+  border-radius: 2px;
 }
-
 .profile_line1 {
-  border: 1px solid black;
+  border: 1px groove black;
+  border-radius: 2px;
 }
 
 .profile_line2 {
   padding-left:15px;
   padding-bottom: 5px;
-  border: 1px solid black;
+  border: 1px groove black;
+  border-radius: 2px;
 }
 
 .profile_line3 {
   padding:10px;
-  border: 1px solid black; 
+  border: 1px groove black; 
+  border-radius: 2px;
 }
 
 .profile_line4 {
   padding:10px;
-  border: 1px solid black; 
-  height:100px;
+  border: 1px groove black; 
+  height:80px;
+  border-radius: 2px;
 }
 .profile_line5 {
   padding:10px;
-  border: 1px solid black; 
-  height:50x1px;
+  border: 1px groove black; 
+  height:50px;
+  border-radius: 2px;
 }

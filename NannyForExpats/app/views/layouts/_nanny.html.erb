@@ -7,11 +7,13 @@
 	<div class="family_listing">
 		<h3> List of Families </h3>
 		<% @families.each do |family| %>
+		
 		<hr/>
-		<%= link_to family.name, family %>
 		<div class="family_each">
 			<%= family.headline %>
 		</div>
+		<%= link_to family.name, family %>
+
 
 		<% end %>
 	</div>
