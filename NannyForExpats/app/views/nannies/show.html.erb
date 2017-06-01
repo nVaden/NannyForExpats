@@ -37,17 +37,17 @@
 			Certifications: <%= @nanny.conditions %>
 		</div>
 		<div class="two columns profile_line5">
-			First Aid: <%= @nanny.first_aid %>
+			First Aid: <%= human_boolean(@nanny.first_aid) %>
 		</div>
 		<div class="two columns profile_line5">
 			License: <%= @nanny.license %>
 		</div>
 		<div class="two columns profile_line5">
-			Car: <%= @nanny.vehicle %>
+			Car: <%= human_boolean(@nanny.vehicle) %>
 		</div>
 		<div class="two columns profile_line5">
 			Permit:
-			<div class="output_styling"> <%= @nanny.permit %>
+			<div class="output_styling"> <%= human_boolean(@nanny.permit) %>
 			</div>
 		</div>
 	</div>

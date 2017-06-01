@@ -86,20 +86,32 @@
 
   <div class="row" style="border-bottom: 1px solid black; margin-bottom: 2px">
     <div class="two columns">
-      <%= f.label :experience %>
-    </div>
-    <div class="four columns">
-      <%= f.text_field :experience, size:"39", autofocus: true %>
-    </div>
-    <div class="offset-by-one two columns">
       <%= f.label :permit, "Work Permit:" %>
     </div>
 
-    <div class="one column">
+    <div class="two columns">
       <%= f.label :permit, "Yes", :value => "true" %>
       <%= f.radio_button  :permit, true %>
       <%= f.label :permit, "No", :value => "false" %>
-      <%= f.radio_button :permit, false, :checked => true, "Yes" %>
+      <%= f.radio_button :permit, false, :checked => true %>
+    </div>
+    <div class="two columns">
+      <%= f.label :first_aid, "First Aid Certified:" %>
+    </div>
+    <div class="two columns">
+      <%= f.label :first_aid, "Yes", :value => "true" %>
+      <%= f.radio_button :first_aid, true %>
+      <%= f.label :first_aid, "No", :value => "false" %>
+      <%= f.radio_button :first_aid, false, :checked => true %>
+    </div>
+        <div class="two columns">
+      <%= f.label :car, "Do you have a vehicle:" %>
+    </div>
+    <div class="two columns">
+      <%= f.label :vehicle, "Yes", :value => "true" %>
+      <%= f.radio_button :vehicle, true %>
+      <%= f.label :vehicle, "No", :value => "false" %>
+      <%= f.radio_button :vehicle, false, :checked => true %>
     </div>
   </div>
 
@@ -111,17 +123,15 @@
       <%= f.text_field :headline, size:"90", autofocus: true, placeholder:"Enter in a headline that the families will see" %>
     </div>
   </div>
-
   <div class="row">
-    <div class="one column">
-      <%= f.label :first_aid, "First Aid:" %>
+    <div class="one column" style="margin-right:1px">
+      <%= f.label :experience, "Experience:" %>
     </div>
     <div class="ten columns">
-    <%= f.text_field :first_aid, size: "90", autofocus: true %>
+      <%= f.text_field :experience, size:"85", autofocus: true %>
     </div>
   </div>
-
-
+  
   <div class="row">
     <div class="four columns">
       <div class="field">
